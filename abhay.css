@@ -1,0 +1,55 @@
+body {
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    overflow: hidden;
+    background-image: url(img/laura-smetsers-St08jKkPVHw-unsplash.jpg);
+}
+
+.aero {
+    background-image: url(img/airplane-png-27938.png);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    animation: animate 15s infinite;
+}
+
+.aero1 {
+    background-image: url(img/airplane-png-27938.png);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    position: absolute;
+    top: 55%;
+    right: -50%;
+    animation: animate1 20s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes animate {
+    0% {
+        right: -50%;
+        top: 45%;
+    }
+    100% {
+        right: 110%;
+        top: -5%;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        right: -50%;
+        top: 65%;
+    }
+    100% {
+        right: 110%;
+        top: -10%;
+    }
+}
